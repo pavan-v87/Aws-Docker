@@ -1,0 +1,8 @@
+version: '3'
+services:
+  linux: 
+    env_file:
+      - aws-access-keys.env
+    build: .
+    volumes:
+     - ./mount:/home
